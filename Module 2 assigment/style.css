@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+
+    font-weight: 600;
+    font-size: 24px;
+    margin: 50px 30px 50px 30px;
+    background-color: blanchedalmond;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid black;
+    
+
+}
+
+
+.container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+
+
+
+}
+
+.item {
+    position: relative;
+    margin: 20px 30px 20px 30px;
+    background-color: gainsboro;
+    border: 2px solid black;
+}
+
+p {
+
+    padding: 35px 30px 20px 30px;
+
+}
+
+
+
+h5 {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    padding: 7px 20px 7px 20px;
+    margin-top: 0px;
+}
+
+
+@media (min-width: 768px) and (max-width : 991px){
+     
+    .container{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 0px;
+        
+    }
+    .item1{
+        
+       grid-column:  3 span / 4;  
+    }
+   
+
+}
+
+@media (max-width: 767px){
+    .container{
+        grid-template-columns: 1fr  ;
+        grid-template-rows: 1fr 1fr 1fr;
+        }
+   
+}
